@@ -1,0 +1,396 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    background-color: #ffffff;
+    padding: 10px;
+    
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar .logo-container {
+    display: flex;
+    align-items: center;
+}
+.navbar img {
+    height: 70px;
+    margin-right: 10px;
+}
+.navbar h1 {
+    color: #333;
+    margin: 0;
+    font-size: 24px;
+}
+.navbar .nav-links {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+.navbar .nav-links a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    font-size: 18px;
+}
+.navbar .nav-links a:hover {
+    color: #007BFF;
+    border-bottom: 2px solid #007BFF;
+}
+.navbar .contact-button {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: #000000 1px solid;
+    font-size: 18px;
+}
+.contact-button:hover {
+    background-color: #ffa323;
+    color: white;
+}
+.container {
+            display: flex;
+            width: 80%;
+            max-width: 1200px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .column {
+            flex: 1;
+            padding: 40px;
+        }
+        .card {
+            background-color: #75a3a3;
+            border-radius: 30px;
+            padding: 30px;
+            padding-top: 100px;
+            color: #fff;
+            padding-right: 60px;
+            height: 600px;
+            width: 600px;
+        }
+        .card h2 {
+            margin-top: 0;
+        }
+        .card button{
+            padding: 15px;
+            padding-left: 25px;
+            padding-right: 25px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 20px;
+        }
+        .card input, .card textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .card input, .card textarea {
+            background-color: #e6f7ff;
+            color: #333;
+        }
+        .card button {
+            background-color: #6f42c1;
+            color: #fff;
+            cursor: pointer;
+        }
+        .card button:hover {
+            background-color: #5a379b;
+        }
+        .contact-info {
+            padding-left: 20px;
+            text-align: start;
+        }
+        .contact-info h2 {
+            padding-top: 90px;
+            font-size: 64px;
+            margin: 0;
+            color: #3b3b3b;
+        }
+        .contact-info h3 {
+            font-size: 34px;
+            margin: 0;
+            color: #3b3b3b;
+            font-weight: 100;
+        }
+        .contact-info p {
+            margin: 10px 0;
+            color: #3b3b3b;
+            font-size: 20px;
+            padding: 10px;
+        }
+        .contact-info i {
+            margin-right: 10px;
+            color: #6f42c1;
+        }
+        .container{
+            padding-left: 500px;
+        }
+        .social-btn {
+            background-color: #fff;
+            border: none;
+            border-radius: 50%;
+            color: #000;
+            cursor: pointer;
+            font-size: 44px;
+            margin: 10px;
+            padding: 10px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        
+        .social-btn:hover {
+            background-color: #ddd;
+            color: #1945ca;
+            transform: scale(1.5);
+        }
+        
+        .social-btn i {
+            display: block;
+        }
+        .cont-fluid{
+            align-items: center;
+            text-align: center;
+        }
+        .testimonials {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .testimonials h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .testimonial-cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .testimonial-card {
+            background-color: #e6f7ff;
+            border-radius: 10px;
+            padding: 20px;
+            width: 800px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: left;
+        }
+        .testimonial-card img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .testimonial-card blockquote {
+            font-size: 1em;
+            margin: 0 0 15px;
+        }
+        .testimonial-card .name {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .testimonial-card .title {
+            font-size: 0.9em;
+            color: #555;
+        }
+        .banner {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+            margin: auto;
+        }
+        .banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .banner-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #B69900;
+            font-size: 7em;
+            font-weight: bold;
+            text-align: center;
+        }
+        .footer {
+            display: flex;
+            justify-content: center;
+            background-color: #ffffff;
+            padding: 20px;
+        }
+        
+        .footer p {
+            color: #000000;
+            margin: 0 15px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        
+        .footer p:hover {
+            color: #ddd;
+            transform: scale(1.4);
+        }
+        .id{
+            display: inline;
+        }
+        footer.id {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #f8f8f8;
+        }
+        
+        footer.id .left, footer.id .right {
+            display: flex;
+            align-items: center;
+        }
+        
+        footer.id .right p {
+            margin: 0 10px;
+        }
+        
+        footer.id p {
+            margin: 0;
+        }
+        .right p:hover{
+            background-color: #000000;
+            color: #ffffff;
+        }
+/* Mobile optimization */
+@media (max-width: 768px) {
+    .navbar {
+        position: static;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: #333;
+    }
+    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .navbar .nav-links a {
+        padding: 10px 0;
+        width: 100%;
+        text-align: left;
+        border-top: 1px solid #ddd;
+        margin: 0;
+    }
+
+    .navbar .contact-button {
+        width: 100%;
+        text-align: left;
+        padding: 10px 0;
+        border-top: 1px solid #ddd;
+    }
+
+
+    .container {
+        flex-direction: column;
+        width: 100%;
+        padding-left: 0;
+    }
+    .column {
+        padding: 20px;
+    }
+    .card {
+        width: 600px;
+        padding: 20px;
+    }
+    .card h2 {
+        font-size: 24px;
+    }
+    .card button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+   
+    .card input, .card textarea {
+        padding: 10px;
+        margin: 5px 0;
+        padding-right: 0px;
+    }
+    .contact-info h2 {
+        font-size: 48px;
+    }
+    .contact-info h3 {
+        font-size: 24px;
+    }
+    .contact-info p {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .social-btn {
+        font-size: 32px;
+    }
+
+    .testimonials h2 {
+        font-size: 2em;
+    }
+    .testimonial-cards {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .testimonial-card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .banner-text {
+        font-size: 4em;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer p {
+        margin: 10px 0;
+    }
+
+    footer.id {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer.id .left, footer.id .right {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer.id .right p {
+        margin: 5px 0;
+    }
+}
