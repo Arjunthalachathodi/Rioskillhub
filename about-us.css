@@ -115,7 +115,7 @@ body {
 .mentor{
     display: flex;
     width: 100%;
-    padding: 20px;
+    padding: 10px;
 }
 .grid-container {
     display: grid;
@@ -126,7 +126,10 @@ body {
     align-items: center;
     padding: 50px;
 }
-
+.gidimg{
+    height: 250px;
+    width: 250px;
+}
 .grid-item {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
