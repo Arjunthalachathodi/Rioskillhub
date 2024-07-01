@@ -57,7 +57,8 @@ body {
     font-size: 18px;
 }
 .navbar .contact-button:hover {
-    background-color: #0056b3;
+    background-color: #ffa323;
+    color: white;
 }
 .headline {
     text-align: center;
@@ -182,7 +183,7 @@ p {
 .image-section img {
     width: 100%;
     height: auto;
-    max-width: 600px;
+    max-width: 500px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -607,3 +608,15 @@ footer.id p {
     background-color: #000000;
     color: #ffffff;
 }
+.download-btn{
+    background-color: DodgerBlue;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    text-decoration: none;
+    border-radius:5px;
+}
+
+.download-btn:hover {
+    background-color: RoyalBlue;
+  }
