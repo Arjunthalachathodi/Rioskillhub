@@ -66,11 +66,11 @@ body {
     display: flex;
 }
 .sub1 h1{
-    font-size: 156px;
+    font-size: 106px;
 }
 .sub2{
     padding-left: 350px;
-    padding-top: 200px;
+    padding-top: 50px;
 }
 .sub2 p{
     font-size: 50px;
