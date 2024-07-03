@@ -377,7 +377,7 @@ p {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background-image: url('images-nv/signup.png');
+    background-image: url('../images-nv/signup.png');
     background-size: cover;
     background-position: center;
 }
