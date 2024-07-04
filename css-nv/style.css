@@ -642,7 +642,10 @@ footer.id p {
   }
 }
 
-@media (max-width: 768px) {
+/* Media Queries for Mobile Optimization */
+
+/* Mobile devices (max-width: 600px) */
+@media (max-width: 600px) {
     .navbar {
         position: static;
         flex-direction: column;
@@ -683,54 +686,41 @@ footer.id p {
 
     .headline {
         font-size: 40px;
-    }
-    .container {
-        padding: 10px;
+        margin: 20px 10px;
     }
     h1 {
         font-size: 40px;
     }
     p {
         font-size: 16px;
+        margin: 1em;
     }
     .profiles {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
     .profile {
         width: 100%;
-        max-width: 150px;
-    }
-    .profile img {
-        width: 100px;
-        height: 100px;
     }
     .section {
         flex-direction: column;
         align-items: center;
     }
     .text-section {
-        margin-right: 0;
-        margin-bottom: 20px;
+        margin: 0 0 20px;
+        text-align: center;
     }
     .text-section h2 {
         font-size: 40px;
     }
-    .text-section h2 span {
-        display: inline;
-    }
-    .subtext {
+    .text-section .subtext {
         font-size: 18px;
     }
     .mentors {
         grid-template-columns: 1fr;
-        gap: 1em;
+        justify-items: center;
     }
     .mentor {
-        max-width: 150px;
-    }
-    .mentor img {
-        max-width: 80px;
-        max-height: 80px;
+        width: 100%;
     }
     .image-section img {
         max-width: 100%;
@@ -738,70 +728,94 @@ footer.id p {
     .subheadline {
         font-size: 40px;
     }
-    .grid-container {
-        grid-template-columns: repeat(1, 1fr);
+    .subtext {
+        font-size: 16px;
     }
-    .grid-container img {
-        width: 100%;
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .grid-item p {
+        font-size: 18px;
     }
     .sentence {
         font-size: 14px;
     }
     .testimonial-cards {
         flex-direction: column;
+        align-items: center;
     }
     .testimonial-card {
+        width: 90%;
+        max-width: none;
+    }
+    .container {
         width: 100%;
-        max-width: 90%;
+        padding: 10px;
+    }
+    .header {
+        padding: 10px;
     }
     .header-content {
         flex-direction: column;
         align-items: center;
     }
     .header-image {
-        margin-right: 0;
-        max-width: 100%;
+        width: 100%;
+        height: auto;
     }
     .header-text {
         align-items: center;
         text-align: center;
         margin-top: 20px;
     }
-    .buttons {
-        flex-direction: column;
-        gap: 10px;
+    .header-text h1 {
+        font-size: 2em;
+    }
+    .header-text p {
+        font-size: 1em;
     }
     .features {
         flex-direction: column;
         align-items: center;
     }
     .feature {
-        max-width: 90%;
-    }
-    .background-image-container {
-        height: auto;
-        padding: 20px;
+        max-width: 100%;
+        margin-bottom: 20px;
     }
     .signup-form-container {
-        width: 100%;
-        max-width: 90%;
+        width: 90%;
+        max-width: none;
+    }
+    .faq-container {
+        padding: 20px 10px;
+    }
+    .background-image-container {
+        position: relative;
+       width: 100;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        background-image: url('../images-nv/signup.png');
+        background-size: cover;
+        background-position: center;
     }
     .faq-items {
         grid-template-columns: 1fr;
     }
     .faq-item {
-        max-width: 100%;
-        width: 600px;
-    }
-    .help-section {
-        text-align: center;
+        width: 90%;
     }
     .ch {
-        font-size: 18px;
+        font-size: 20px;
+    }
+    .row {
+        flex-direction: column;
+        align-items: center;
     }
     .social-btn {
         font-size: 20px;
-        padding: 8px;
     }
     .footer {
         flex-direction: column;
@@ -811,7 +825,20 @@ footer.id p {
         margin: 10px 0;
     }
     .download-btn, .btn {
+        width: 100%;
+        text-align: center;
         font-size: 1.5rem;
-        padding: 0.5rem 1rem;
     }
+    @media(prefers-reduced-motion:no-preference) {
+        * > img{
+          scale: 0.8;opacity: 1;
+        animation: fade-in linear forwards;
+        animation-timeline: view();
+         animation-range: exit;
+        }
+        @keyframes fade-in {
+          to{scale: 1;opacity: 0;}
+          
+        }
+      }
 }
