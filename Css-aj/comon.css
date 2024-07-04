@@ -158,75 +158,101 @@ footer.id p {
     background-color: #000000;
     color: #ffffff;
 }
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+        height: auto;
+        width: 100%;
+    }
+
     .navbar {
-       position: static;
-       flex-direction: column;
-       align-items: flex-start;
-   }
+        position: static;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-   .menu-toggle {
-       display: block;
-       cursor: pointer;
-       font-size: 24px;
-       color: #333;
-   }
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: #333;
+    }
+    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
 
-   .nav-links {
-       display: none;
-       flex-direction: column;
-       width: 100%;
-   }
+    .nav-links.active {
+        display: flex;
+    }
 
-   .nav-links.active {
-       display: flex;
-   }
+    .navbar .nav-links a {
+        padding: 10px 0;
+        width: 100%;
+        text-align: left;
+        border-top: 1px solid #ddd;
+        margin: 0;
+    }
 
-   .navbar .nav-links a {
-       padding: 10px 0;
-       width: 100%;
-       text-align: left;
-       border-top: 1px solid #ddd;
-       margin: 0;
-   }
+    .navbar .contact-button {
+        width: 100%;
+        text-align: left;
+        padding: 10px 0;
+        border-top: 1px solid #ddd;
+    }
+    .para {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 18px;
+    }
 
-   .navbar .contact-button {
-       width: 100%;
-       text-align: left;
-       padding: 10px 0;
-       border-top: 1px solid #ddd;
-   }
+    .he {
+        font-size: 30px;
+    }
 
-   .para{
-   padding: 10px;
-   font-size: 25px;
-   text-align: justify;
-}
+    .cont-fluid {
+        padding: 10px;
+    }
 
-   .cont-fluid {
-       padding: 10px;
-   }
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
 
-   .footer {
-       flex-direction: column;
-       align-items: center;
-   }
+    .col-12 {
+        text-align: center;
+    }
 
-   .footer p {
-       margin: 10px 0;
-   }
+    .social-btn {
+        font-size: 20px;
+        padding: 8px;
+        margin: 5px;
+    }
 
-   footer.id {
-       flex-direction: column;
-       align-items: center;
-   }
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
 
-   footer.id .left, footer.id .right {
-       flex-direction: column;
-       align-items: center;
-   }
+    .footer p {
+        margin: 10px 0;
+    }
 
-   footer.id .right p {
-       margin: 5px 0;
-   }
+    footer.id {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    footer.id .left, footer.id .right {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    footer.id .right p {
+        margin: 5px 0;
+    }
 }

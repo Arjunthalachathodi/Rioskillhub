@@ -291,12 +291,24 @@ footer.id p {
     background-color: #000000;
     color: #ffffff;
 }
+@media (max-width: 600px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
 
-@media (max-width: 768px) {
-     .navbar {
+    *, *::before, *::after {
+        box-sizing: inherit;
+    }
+
+    .navbar {
         position: static;
         flex-direction: column;
         align-items: flex-start;
+        width: 100%;
     }
 
     .menu-toggle {
@@ -330,24 +342,29 @@ footer.id p {
         padding: 10px 0;
         border-top: 1px solid #ddd;
     }
+    
 
     .intro .head {
         flex-direction: column;
         align-items: flex-start;
+        width: 100%;
     }
 
     .sub1 h1 {
         font-size: 36px;
         margin-bottom: 20px;
+        width: 100%;
     }
 
     .sub2 {
         padding-left: 0;
         padding-top: 0;
+        width: 100%;
     }
 
     .sub2 p {
         font-size: 18px;
+        width: 100%;
     }
 
     .btn {
@@ -358,20 +375,24 @@ footer.id p {
     .container {
         flex-direction: column;
         align-items: stretch;
+        width: 100%;
     }
 
     .card {
         width: 100%;
         margin-bottom: 20px;
+        height: fit-content;
+        padding: 10px; 
     }
 
     .mentor {
         flex-direction: column;
         align-items: flex-start;
+        width: 100%;
     }
 
     .mentor .img2 {
-        width: 100%;
+        width: 670px;
     }
 
     .mentor .img2 img {
@@ -390,28 +411,34 @@ footer.id p {
     .grid-container {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
+        width: 100%;
     }
 
     .grid-item {
         padding: 10px;
+        width: 100%;
     }
 
     .text-column {
         padding-right: 0;
         padding-top: 20px;
+        width: 100%;
     }
 
     .image-column {
         padding-top: 20px;
         padding-bottom: 180px;
+        width: 100%;
     }
 
     .text-column h1 {
         font-size: 24px;
+        width: 100%;
     }
 
     .text-column p {
         font-size: 18px;
+        width: 100%;
     }
 
     .card1 {
@@ -420,16 +447,19 @@ footer.id p {
     }
 
     .card1 img {
+        width: 100%;
         height: auto;
     }
 
     .cont-fluid {
         padding: 10px;
+        width: 100%;
     }
 
     .footer {
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     .footer p {
@@ -439,11 +469,13 @@ footer.id p {
     footer.id {
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     footer.id .left, footer.id .right {
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     footer.id .right p {

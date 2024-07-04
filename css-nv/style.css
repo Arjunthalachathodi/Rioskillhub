@@ -643,8 +643,6 @@ footer.id p {
 }
 
 /* Media Queries for Mobile Optimization */
-
-/* Mobile devices (max-width: 600px) */
 @media (max-width: 600px) {
     .navbar {
         position: static;
@@ -829,16 +827,9 @@ footer.id p {
         text-align: center;
         font-size: 1.5rem;
     }
-    @media(prefers-reduced-motion:no-preference) {
-        * > img{
-          scale: 0.8;opacity: 1;
-        animation: fade-in linear forwards;
-        animation-timeline: view();
-         animation-range: exit;
-        }
         @keyframes fade-in {
           to{scale: 1;opacity: 0;}
           
         }
-      }
+    
 }
